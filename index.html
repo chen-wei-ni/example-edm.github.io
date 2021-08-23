@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(window).scroll(function(){
+            
+            /* Check the location of each desired element */
+            $('.hideme').each( function(i){   
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity':'1'},200,'linear',0);
+                    $(this).animate({'top':'0'},200,'linear',0);   
+                }            
+            }); 
+            $('.hideme2').each( function(i){   
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity':'1'},200,'linear',0);
+                    $(this).animate({'top':'0'},200,'linear',0);   
+                }            
+            }); 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                <div class="title-in">
+                    <img src="images/title.png">
+                </div>
+                <div class="ribbon">
+                    <img src="images/title-ribbon.png">
+                </div>
+            </div>
+            <div class="width-1220">
+                <div class="title-event"><img src="images/event_title.png"></div>
+                <div class="event">
+                    <div class=" hideme">
+                        <img src="images/event-1.png">
+                    </div>
+                    <div class="hideme2">
+                        <img src="images/event-2.png">
+                    </div>
+                    <div class="hideme">
+                        <img src="images/event-3.png">
+                    </div>
+                </div>
+                <div class="title-tires">
+                     <div>
+                         <img src="images/papa_title.png">
+                     </div>
+                </div>
+                <div class="tire-brand">
+                    <img src="images/brand-1.png">
+                </div>
+                <div class="tire-good">
+                   <a href=""><img src="images/tire1.png"></a>
+                   <a href=""><img src="images/tire2.png"></a>
+                </div>
+                <div class="tire-brand">
+                    <img src="images/brand-2.png">
+                </div>
+                <div class="tire-good">
+                    <a href=""> <img src="images/tire3.png"></a>
+                    <a href=""><img src="images/tire4.png"></a>
+                </div>
+                <div class="tire-brand">
+                    <img src="images/brand-3.png">
+                </div>
+                <div class="tire-good">
+                    <a href=""> <img src="images/tire5.png"></a>
+                    <a href=""><img src="images/tire6.png"></a>
+                </div>
+                <div class="title-event">
+                    <img src="images/papa_title2.png">
+                </div>
+                <div class="product-row">
+                    <a href=""><img src="images/麻新.png"></a>
+                    <a href=""> <img src="images/安博.png"></a>
+                    <a href=""> <img src="images/bosch.png"></a>
+                    <a href=""> <img src="images/covox.png"></a>                  
+                    <a href=""><img src="images/MMB.png"></a>
+                    <a href=""> <img src="images/MIO.png"></a>
+                    <a href=""> <img src="images/R76T.png"></a>
+                    <a href=""> <img src="images/EA.png"></a>                   
+                </div>
+                <div class="title-paper">
+                    <img src="images/隔熱紙.png">
+                </div>
+                <div class="product-row">
+                    <a href=""><img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>                  
+                    <a href=""><img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>
+                    <a href=""> <img src="images/paper.png"></a>                   
+                </div>
+                <div class="title-paper">
+                    <img src="images/cato.png">
+                </div>
+                <div class="cate">
+                    <a href=""><img src="images/高品質.png"></a>
+                    <a href=""><img src="images/充電.png"></a>
+                    <a href=""><img src="images/行車.png"></a>
+                    <a href=""><img src="images/救援.png"></a>
+                    <a href=""><img src="images/機油.png"></a>
+                    <a href=""><img src="images/影音.png"></a>
+                    <a href=""><img src="images/車內配件.png"></a>
+                    <a href=""><img src="images/隔熱專區.png"></a>
+                    <a href=""><img src="images/雨刷.png"></a>
+                    <a href=""><img src="images/清潔.png"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

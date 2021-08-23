@@ -1,0 +1,117 @@
+body{
+    margin:0;
+}
+/*背景*/
+.wrapper {
+    background: #fff url('../images/wrapper_1220.jpg') center top no-repeat;
+    position: relative;
+    min-width: 1200px;
+    height: 7900px;
+}
+    .title {
+        text-align: center;
+        position: relative;
+        padding-top: 20px; 
+    }
+        .title-in  {
+            animation: title 2s;
+        }
+        
+        .ribbon {
+            margin-top: 0;
+            animation: ribbon 2s infinite;
+            position: absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50% , -50%);
+        }
+        @keyframes title {
+            0% {
+                opacity: 0;
+                transform: rotateX(0)  rotateY(30deg);
+            }                 
+            100% {
+                opacity: 1;                
+            }
+        }
+        @keyframes ribbon {
+            0% {
+                opacity: 0;
+                
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /*下方區塊 活動開始*/
+        /*隨著視窗瀏覽顯現*/
+        .hideme {
+            opacity: 0;
+            position: relative;
+            top:50px;
+        }
+        .hideme2 {
+            opacity: 0;
+            position: relative;
+            bottom:40px;
+        }
+        /*隨著視窗瀏覽顯現*/
+        .width-1220 {
+            width:1220px;
+            margin: 0 auto;
+            margin-top: 750px;
+            position: relative;
+        }
+        .width-1220::before {
+            content: url('../images/ribbon-big.png');
+            position: absolute;
+            width:300px;
+            height: 300px;
+            top:-50px;
+            right:50%;
+            transform: translateX(50%);
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+            .title-event {
+               text-align: center;
+               margin-bottom: 60px;
+            }
+            .event {
+                display: flex;
+                justify-content: center;
+            }
+        .title-tires {
+            text-align: center;
+            margin-top: 110px;
+        }
+        .tire-brand {
+            text-align: center;
+        }
+        .tire-good {
+            display: flex;
+            padding-top: 20px;
+        }
+        .product-row {
+            text-align: center;
+            margin-top: 300px;
+        }
+        .title-paper {
+            text-align: center;
+            margin-top: 150px;
+        }
+        .cate {
+            text-align: center;
+            padding-top: 50px;
+        }
+        a:hover img{
+            transform: translateY(-15px);
+            transition: 0.3s;
+            /*filter: brightness(150%);*/
+        }
+        .cate a:hover img {
+            filter: brightness(120%);
+        }
+            
