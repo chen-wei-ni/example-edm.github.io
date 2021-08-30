@@ -1,3 +1,134 @@
+body {
+    margin:0;
+}
 .wrapper {
     display:none;
 }
+.wrapper-sm {
+    background: #fff url('../images-sm/640-EDM.jpg') center top no-repeat;
+    position: relative;
+    width: 100%;
+    min-width: inherit;
+    min-height: 100vh;
+    background-size: cover ,contain;
+}
+
+    .title-in  {
+        max-width: 65%;
+        animation: title 2s;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .title-in img {
+        width:100%;
+    }    
+    
+    @keyframes title {
+        0% {
+            opacity: 0;
+            transform: rotateX(0)  rotateY(30deg);
+        }                 
+        100% {
+            opacity: 1;                
+        }
+    }
+    .title-event {
+        text-align: center;
+        margin: 18vh auto 0 auto;
+        width:70%;
+    }
+        .title-event img {
+            width: 100%;
+        }
+    .event {
+        display: flex;
+    }
+        .hideme, .hideme2 {
+            width:100%;
+            padding-top: 20px;
+        }
+        .hideme img, .hideme2 img {
+            width: 100%;
+        }
+    .title-tires {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+        width:60%;
+    }
+        .title-tires img {
+            width:100%;
+        }
+
+
+
+    /*下方區塊 活動開始*/
+        /*隨著視窗瀏覽顯現*/
+        .hideme {
+            opacity: 0;
+            position: relative;
+            top:50px;
+        }
+        .hideme2 {
+            opacity: 0;
+            position: relative;
+            bottom:40px;
+        }
+        .width-1220 {
+            margin: 0 auto;
+            position: relative;
+        }
+    
+    .tire-brand {
+        width:90%;
+        margin: 0 auto;
+    }
+        .tire-brand img {
+            width:100%;
+        }
+
+    .tire-good {
+        width:100%;
+        display: flex;
+    }
+        .tire-good a img {
+            width:100%;
+        }
+    .title-product {
+        margin:30px auto 0 auto;
+        width:70%;
+    }
+    .product-row {        
+        display: flex;      
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: calc(100% - 17em);
+    }
+    .product-row a{
+        width:40%;
+    }    
+    .product-row a img {
+        width:100%;
+    }
+    .title-paper {
+        width:70%;
+        margin: 3em auto 0 auto;
+    }
+        .title-paper img {
+            width:100%;
+        }
+    .cate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cate a {
+        width: calc(100%/3 - 30px);
+    }
+    .cate a img {
+        width:100%;
+    }
+
+        

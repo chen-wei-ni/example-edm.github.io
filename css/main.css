@@ -1,12 +1,16 @@
 body{
     margin:0;
 }
+.wrapper-sm {
+    display: none;
+}
 /*背景*/
 .wrapper {
     background: #fff url('../images/wrapper_1220.jpg') center top no-repeat;
     position: relative;
-    min-width: 1200px;
-    height: 7900px;
+    width: 100%;
+    min-width: 1220px;
+    min-height: 100vh;
 }
     .title {
         text-align: center;
@@ -19,9 +23,9 @@ body{
         
         .ribbon {
             margin-top: 0;
-            animation: ribbon 2s infinite;
+            animation: ribbon 1s infinite alternate;
             position: absolute;
-            top:45%;
+            top:40%;
             left:50%;
             transform: translate(-50% , -50%);
         }
@@ -37,10 +41,12 @@ body{
         @keyframes ribbon {
             0% {
                 opacity: 0;
-                
+                filter: brightness(90%);  
             }
+
             100% {
                 opacity: 1;
+                filter: brightness(120%);
             }
         }
 
