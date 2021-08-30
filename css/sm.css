@@ -114,11 +114,14 @@ body {
     }
     .title-paper {
         width:70%;
-        margin: 3em auto 0 auto;
+        margin:  4em auto 0 auto;
     }
         .title-paper img {
             width:100%;
         }
+    .paper-row {
+        margin-top: calc(100% - 19em);
+    }
     .cate {
         display: flex;
         flex-wrap: wrap;
@@ -131,6 +134,10 @@ body {
         width:100%;
     }
 @media screen and (min-width:300px) and (max-width:374px) {
+    .title-paper {
+        width:70%;
+        margin: 2.7em auto 0 auto;
+    }
     .product-row {        
         display: flex;      
         flex-wrap: wrap;
@@ -143,14 +150,14 @@ body {
 @media screen and (min-width:375px) and (max-width:390px) {
     .title-paper {
         width:70%;
-        margin: 2em auto 0 auto;
+        margin: 3em auto 0 auto;
     }
     .product-row {        
         display: flex;      
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-top: calc(100% - 15em);
+        margin-top: calc(100% - 16em);
     }
     .paper-row {
         margin-top: calc(100% - 17em);
